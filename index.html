@@ -44,11 +44,12 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
+      <i class="bi bi-list toggle-sidebar-btn m-3"></i>
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">Policia Interes</span>
+        <img src="assets/img/FondoInterpolice.jpeg" alt="">
+        <span class="d-none d-lg-block">Policia InteresPacial</span>
       </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
+      
     </div><!-- End Logo -->
 
     <div class="search-bar">
@@ -296,14 +297,7 @@
               <i class="bi bi-circle-fill"></i></i><span>Reportes</span>
             </a>
           </li>
-          
-      
-          
-          
-          
-        
-         
-          
+     
         </ul>
       </li><!-- End Components Nav -->
 
@@ -363,7 +357,72 @@
 
     <section class="section dashboard">
     <div class="row">
-      acaba el texto
+      <div class="col"><div class="card">
+          
+        <div class="card-body mt-4">
+          <button class="btn btn-info bg-success">
+            Ventas del mes
+            <span class="badge bg-primary "
+              >10.000.000</span
+            >
+          </button>
+          
+        </div>
+      </div></div>
+      <div class="col"><div class="card">
+          
+        <div class="card-body mt-4">
+          <button class="btn btn-info">
+            Clientes nuevos
+            <span class="badge bg-success "
+              >124</span
+            >
+          </button>
+          
+        </div>
+      </div></div>
+      <div class="col"><div class="card">
+          
+        <div class="card-body mt-4">
+          <button class="btn btn-info bg-warning">
+            Cuentas por pagar
+            <span class="badge bg-warning "
+              >4.000.000</span
+            >
+          </button>
+          
+        </div>
+      </div></div>
+      <div class="col"><div class="card">
+          
+        <div class="card-body mt-4">
+          <button class="btn btn-info bg-danger">
+            Accidentes por mes
+            <span class="badge bg-info "
+              >10.000.000</span
+            >
+          </button>
+          
+        </div>
+      </div></div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header"><h1>Grafica</h1></div>
+          <div class="card-body">
+            <div id="chart"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-header"><h1>Grafica</h1></div>
+          <div class="card-body">
+            <div id="chart2"></div>
+          </div>
+        </div>
+      </div>
     </div>
     </section>
 
@@ -391,7 +450,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

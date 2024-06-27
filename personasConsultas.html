@@ -42,14 +42,15 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
-
     <div class="d-flex align-items-center justify-content-between">
+      <i class="bi bi-list toggle-sidebar-btn m-3"></i>
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">Policia Interes</span>
+        <img src="assets/img/FondoInterpolice.jpeg" alt="">
+        <span class="d-none d-lg-block">Policia InteresPacial</span>
       </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
-    </div><!-- End Logo -->
+      
+    </div>
+    <!-- End Logo -->
 
     <div class="search-bar">
       <form class="search-form d-flex align-items-center" method="POST" action="#">
@@ -367,10 +368,13 @@
       <div class="col">
           <div class="card">
             <div class="card-header">
-              Consulta de personas <button type="button" class="btn btn-primary m-3">Nuevo</button>
+            Consulta de personas <button type="button" class="btn btn-primary m-3" data-bs-toggle="modal" data-bs-target="#formulario">nuevo</button> 
+            <button type="button" class="btn btn-primary m-3" data-bs-toggle="modal" data-bs-target="#formulario2">nuevo</button> 
+            </div>
+            
             </div>
             <div class="card-body">
-              <table class="table table-striped tabla-hover">
+              <table class="table table-striped tabla-hover" >
                 <thead>
                   <tr>
                     <th scope="col">#</th>
@@ -381,14 +385,14 @@
                     <th>Borrar</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody id="miTabla">
                   <tr>
-                    <th scope="row">1</th>
+                    <!--<th scope="row">1</th>
                     <td>Mark</td>
                     <td>Otto</td>
                     <td>@mdo</td>
                     <th><a href="#"><i class="bi bi-pencil-square"></i></a></th>
-                    <th><a href="#"><i class="bi bi-trash"></i></a></th>
+                    <th><a href="#"><i class="bi bi-trash"></i></a></th>-->
                    
                   </tr>
                   
@@ -403,6 +407,96 @@
     </section>
      <!--FIN DEL CONTENIDO-->
 
+
+     <!-- Modal -->
+<div class="modal fade" id="formulario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        el uno 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Fin de formulario modal-->
+<!--MODAL2-->
+<div class="modal fade" id="formulario2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <!-- ACA VA EL CONTENIDO DE LA MODAL -->
+        <div class="container">
+          <div class="row">
+                <div class="col"><div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+              </div>
+                <div class="col"><div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+              </div>
+              </div>
+              <div class="row">
+                    <div class="col"><div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                  </div>
+                    <div class="col"><div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                  </div>
+                    <div class="col"><div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                  </div>
+              </div>
+        </div>
+       <!-- FIN DEL CONTENIDO DE LA MODAL -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
   </main>
     
   <!-- ======= Footer ======= -->
@@ -427,7 +521,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="./assets/js/personaConsulta.Js"></script>
 </body>
 
 </html>
